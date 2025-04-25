@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    list-style-type: none;
+}
+
+:root {
+    --primary-color--: #05427A;
+    --secondary-color--: #021425;
+    --tertiary-color--: #02386B;
+    --button-color: #D9D9D9;
+    --another-color: #1681E5;
+
+}
+
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.logo img {
+    height: 90px;
+}
+
+nav ul {
+
+    display: flex;
+    gap: 30px;
+
+}
+
+nav ul li a {
+
+    color: var(--primary-color--);
+    text-decoration: none;
+    font-size: 17px;
+    /* position:relative;
+    top:39px; */
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+button {
+    background-color: var(--tertiary-color--);
+    color: white;
+   
+}
+
+button:hover {
+    background-color: var(--secondary-color--);
+    transform: scale(1.1);
+    transition-duration: 1s;
+
+}
+
+button a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+
+}
+
+.for {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.493)), url(/GALLERY/AI\ Emergence\ in\ Workspaces_\ $1_2\ Trillion\ Saved\ in\ Maintenance.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+.intro h1 {
+    text-align: center;
+    color: var(--another-color);
+    font-family: arial;
+    font-size: 90px;
+    padding-top: 100px;
+}
+
+.new{
+    height: auto;
+    padding: 10vh 0 10vh 0;
+}
+.flex--1{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.write {
+    display: flex;
+    /* margin-top: 150px; */
+
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+.ham{
+    width: 40px;
+    height: 4px;
+    border-radius: 3px;
+    background: #05427A;
+}
+
+
+#right h4 {
+    color: #021425;
+    font-family: Arial;
+    font-size: 50px;
+}
+
+#right p {
+    color: var(--secondary-color--);
+    font-family: arial;
+    font-size: 1em;
+}
+
+.write img {
+    height: 90vh;
+    /* margin-left: 60px;
+    position: relative;
+    margin-bottom: 90px; */
+}
+.flex-1 img{
+    height: 360px;
+}
+.mission {
+    display: flex;
+    margin-top: 20px;
+    /* position: relative;
+    top: 50px;
+    right: 90px; */
+}
+
+.mission img {
+    height: 90px;
+  
+}
+
+.values h2 {
+    color: #021425;
+    font-size: 40px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.values ul li {
+  
+    font-family: arial;
+}
+
+.span {
+    color: #021425;
+    font-size: 0.9em;
+    font-family: arial;
+    font-weight: bold;
+
+}
+.btn{
+    height: 49px;
+    width: 140px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: capitalize;
+   margin-top: 10px;
+}
+
+.close h2 {
+    color: #021425;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.24)), url(/GALLERY/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 0 0 2vh 0;
+   
+
+}
+
+.footer {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height:auto; */
+}
+
+.side img {
+    height: 20vh;
+}
+
+.side p {
+    color: var(--another-color);
+    font-family: arial;
+}
+
+.side button {
+    background-color: var(--another-color);
+  
+}
+
+.company {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.company h1 {
+    font-family: arial;
+    font-size: 45px;
+    color: white;
+}
+
+.company ul li a {
+    text-decoration: none;
+    color: var(--another-color);
+    font-family: arial;
+    font-size: 25px;
+}
+
+.to {
+    display: flex;
+    color: white;
+}
+
+.to a {
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+}
+
+.social {
+    display: flex;
+    gap: 20px
+}
+
+.last {
+    margin-top: 40px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    flex-wrap: wrap;
+}
+
+.social img {
+    height: 30px;
+    
+   
+
+}
+
+hr {
+    height: 2px;
+    background-color: white
+}
+
+.copy {
+    color: white;
+    font-family: arial;
+}
+
+
+@media screen and (max-width:910px) {
+    .new{
+        padding: 0 0 70vh 0;
+    }
+    .flex-2{
+        text-align: center;
+        padding: 0 0 20vh 0;
+        /* margin-bottom: 70vh; */
+    }
+    .close{
+        margin-bottom: 40vh;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .them_links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
+@media screen and (max-width:530px) {
+    .new{
+        padding: 0 0 180vh 0;
+        line-height: 27px;
+    }
+    .intro h1{
+        font-size: 2.6em;
+    }
+    .values{
+        margin-top: 80px;
+    }
+    footer{
+        text-align: center;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    /* .flex{
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+        text-align: center;
+    } */
+}

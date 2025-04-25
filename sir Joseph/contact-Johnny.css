@@ -1,0 +1,188 @@
+:root{
+    --primary-color--:#05427A;
+    --secondary-color--:#021425;
+    --tertiary-color--:#02386B;
+    --button-color:#D9D9D9;
+    --another-color:#1681E5;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.intro{
+    background: linear-gradient(rgba(0, 0, 29, 0.781),rgba(0, 0, 29, 0.397),rgba(0, 0, 29, 0.048)),url(/GALLERY/Best\ Software\ Development\ Company\ in\ India\ _\ Slash\ Star.jpg);
+    /* background-attachment: fixed; */
+    background-position: center;
+   background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.logo img{
+    height:90px;
+}
+nav ul {
+    display:flex;
+    gap:30px;
+   
+    
+}
+nav ul li{
+    margin-right: 30px;
+    position: relative;
+    right: 70px;
+}
+nav ul li a{
+   
+    color:var(--primary-color--);
+    text-decoration: none;
+    font-size:17px;
+    position:relative;
+    top:39px;
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+
+button{
+    background-color:var(--tertiary-color--); 
+    color:white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    height:5vh;
+    width:10vw;
+    color:white;
+    position: relative;
+    right: 80px;
+
+ }
+ button:hover{
+    background-color: var(--secondary-color--);
+    transform:scale(1.1);
+    transition-duration: 1s;   
+ }
+ button a{
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+ }
+
+ .greet{
+   background:linear-gradient(#021425d2,#021425ce,#021425d8),url(/GALLERY/Screenshot\ 2025-03-25\ 095131.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    color: #ffff;
+    font-family: arial;
+    padding: 50px;
+ }
+ .left{
+   display:flex;
+   flex-direction: column;
+   color: #ffffff50;
+   font-family: arial;
+   gap: 05px;
+ }
+ .left h2{
+   color:#ffff
+ }
+ #send{
+   position: relative;
+   left: 50px;
+ }
+
+ footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.918),rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.24)),url(/GALLERY/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    /* margin-top: 40px; */
+    justify-content:space-between;
+    height:60vh;
+ 
+ }
+ .side{
+    margin-left: 30px;
+ }
+ .side img{
+    height: 20vh;
+ }
+ .side p{
+    color:var(--another-color);
+    font-family: arial;
+ }
+ .side button{
+    background-color: var(--another-color);
+    margin-left: 80px;
+    margin-bottom: 20px;
+ }
+ .company{
+    text-align: center;
+    margin-top: 40px;
+ }
+ .company h1{
+    font-family: arial;
+    font-size: 45px;
+    color:white;
+ }
+ .company ul li a{
+    text-decoration: none;
+    color:var(--another-color);
+    font-family: arial;
+    font-size: 25px;
+ }
+ .to{
+    display: flex;
+    color:white;
+    margin-top: 150px;
+    margin-right: 90px;
+ 
+ }
+ .to a{
+    color:white;
+    text-decoration: none;
+    font-family: arial;
+ }
+ .social{
+    display: flex;
+    position: relative;
+    bottom:55px;
+    gap:20px
+    
+ }
+ .social img{
+    height: 30px;
+    position: relative;
+    top:100px;
+    left:1000px;
+    
+ }
+ hr{
+    height:2px;
+    background-color:white
+ }
+ .last{
+    position: relative;
+    bottom: 90px;
+ }
+ .copy{
+    color:white;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    font-family: arial;
+ }

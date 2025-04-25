@@ -1,0 +1,279 @@
+:root{
+    --primary-color--:#05427A;
+    --secondary-color--:#021425;
+    --tertiary-color--:#02386B;
+    --button-color:#D9D9D9;
+    --another-color:#1681E5;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--secondary-color--);
+}
+.logo img{
+    height:90px;
+}
+nav ul {
+    display:flex;
+    gap:30px;
+   
+    
+}
+nav ul li{
+    margin-right: 30px;
+    position: relative;
+    right: 70px;
+}
+nav ul li a{
+   
+    color:white;
+    text-decoration: none;
+    font-size:17px;
+    position:relative;
+    top:39px;
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+
+button{
+    background-color:var(--tertiary-color--); 
+    color:white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    height:5vh;
+    width:10vw;
+    color:white;
+    /* position: relative;
+    right: 80px; */
+
+ }
+ button:hover{
+    background-color: var(--secondary-color--);
+    transform:scale(1.1);
+    transition-duration: 1s;
+   
+ }
+ button a{
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+ }
+ .start{
+    background:linear-gradient(to bottom,rgb(0, 0, 0),rgba(0, 0, 0, 0.932),rgba(0, 0, 0, 0.342)),url(/GALLERY/website-hosting-concept-with-bright-light.jpg.crdownload) ;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    height:90vh;
+    /* align-items: center; */
+ }
+ .text h3{
+    color:var(--another-color);
+    font-size: 90px;
+    /* margin-left: 300px; */
+    margin-top: 150px;
+    font-family: arial;
+     font-size: 15vh;
+   align-items: center;
+
+ }
+ 
+ .bigger{
+   width:auto;
+   height: auto;
+   padding:0,0,10vh,0;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+ .flex--1{
+    box-shadow: 2px 2px 2px 2px var(--secondary-color--);
+    border-radius: 15px;
+    width: 90%;
+    padding:15vh, 10vh,15vh, 10vh;
+    flex-wrap: wrap;
+    height: auto;
+    /* margin-left: 90px; */
+    height: 80vh;
+    /* margin-top:20vh; */
+   display:flex;
+   gap:10px;
+   justify-content: center;
+   align-items:center;
+ }
+
+ h3{
+    color:#1681E5;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+ }
+.explain{
+   width: 50%;
+
+}
+.me{
+   margin:top:60px; 
+   margin-bottom:60px;
+}
+ .explain p{
+    font-family: arial;
+    font-size: 17px;
+    margin-left: 50px;
+    
+    /* padding-top: 20px; */
+ }
+ .gal{
+   /* margin-top: 20vh; */
+  c
+ }
+ /* .gal img{
+    height:50vh;
+   border-radius: 20px;
+ } */
+ .img img{
+    height:40vh;
+    top:90px;
+    right:30px;
+    border-radius: 20px;
+
+ }
+ .img{
+    width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ span{
+    font-weight: bold;
+ }
+ .port{
+   position: absolute;
+   /* right:300px; */
+ }
+ 
+ footer {
+   background: linear-gradient(rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.24)), url(/GALLERY/footer.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: auto;
+   padding: 0 0 2vh 0;
+   /* display: flex;
+   margin-top: 40px;
+   justify-content:space-around;
+   height:auto; */
+
+}
+
+.footer {
+   display: flex;
+   margin-top: 40px;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   /* height:auto; */
+}
+
+.side img {
+   height: 20vh;
+}
+
+.side p {
+   color: var(--another-color);
+   font-family: arial;
+}
+
+.side button {
+   background-color: var(--another-color);
+   /* margin-left: 80px;
+   margin-bottom: 20px; */
+}
+
+.company {
+   text-align: center;
+   margin-top: 40px;
+}
+
+.company h1 {
+   font-family: arial;
+   font-size: 45px;
+   color: white;
+}
+
+.company ul li a {
+   text-decoration: none;
+   color: var(--another-color);
+   font-family: arial;
+   font-size: 25px;
+}
+
+.to {
+   display: flex;
+   color: white;
+}
+
+.to a {
+   color: white;
+   text-decoration: none;
+   font-family: arial;
+}
+
+.social {
+   display: flex;
+   /* position: relative;
+   bottom:55px; */
+   gap: 20px
+}
+
+.last {
+   margin-top: 40px;
+   /* margin-bottom: 40px; */
+}
+
+.flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.social img {
+   height: 30px;
+   position: relative;
+   /* top:100px;
+   left:1000px; */
+
+}
+
+hr {
+   height: 2px;
+   background-color: white
+}
+
+/* .last{
+   position: relative;
+   bottom: 90px;
+} */
+.copy {
+   color: white;
+   position: relative;
+   top: 20px;
+   left: 10px;
+   font-family: arial;
+}
+@media screen and (max-width:1120px) {
+   .me{
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+   }
+}
