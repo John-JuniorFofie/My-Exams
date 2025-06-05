@@ -1,239 +1,201 @@
-:root {
-    --primary-color--: #05427A;
-    --secondary-color--: #021425;
-    --tertiary-color--: #02386B;
-    --button-color: #D9D9D9;
-    --another-color: #1681E5;
+:root{
+    --primary-color--:#05427A;
+    --secondary-color--:#021425;
+    --tertiary-color--:#02386B;
+    --button-color:#D9D9D9;
+    --another-color:#1681E5;
 
 }
-
-* {
+*{
     padding: 0;
     margin: 0;
     list-style-type: none;
     box-sizing: border-box;
 }
-
-.intro {
-    background: linear-gradient(rgba(0, 0, 29, 0.781), rgba(0, 0, 29, 0.397), rgba(0, 0, 29, 0.048)), url(/GALLERY/Best\ Software\ Development\ Company\ in\ India\ _\ Slash\ Star.jpg);
+.intro{
+    background: linear-gradient(rgba(0, 0, 29, 0.664),rgba(0, 0, 29, 0.603),rgba(0, 0, 29, 0.63)),url(/GALLERY/group-multinational-busy-people-working-office.jpg);
+    /* background-attachment: fixed; */
     background-position: center;
-    background-repeat: no-repeat;
+   background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 100vh;
 }
-
-header {
+header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-around;
     background-color: white;
+    align-items:center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index:1000;
+    box-shadow: 0 4px 6px #02142583;
 }
-
-.logo img {
-    height: 90px;
+.logo img{
+    height:50px;
 }
-
 nav ul {
-    display: flex;
-    gap: 30px;
-
-
+    display:flex;
+    gap:30px;
+   
+    
 }
-
-nav ul li a {
-
-    color: var(--primary-color--);
+nav ul li{
+   
+}
+nav ul li a{
+   
+    color:var(--primary-color--);
     text-decoration: none;
-    font-size: 17px;
-    /* position:relative; */
-    /* top:39px; */
+    font-size:17px;
     font-family: arial;
     text-transform: uppercase;
-    font-weight: bold;
-
+  
+   
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.hamburger span {
-
-    width: 40px;
-    height: 4px;
-    border-radius: 3px;
-    background: #05427A;
-}
-
-button {
-    background-color: var(--tertiary-color--);
-    color: white;
+button{
+    background-color:var(--tertiary-color--); 
+    color:white;
     border-radius: 5px;
     border: none;
-    /* margin-top: 30px; */
-    height: 5vh;
-    width: 10vw;
-    color: white;
-    /* position: relative; */
-    right: 80px;
+    height: 30px;;
+    width:100px;
+    color:white;
+  
+   
 
-}
-
-button:hover {
-    background-color: transparent;
-    color: #021425;
-    transform: scale(1.1);
+ }
+ button:hover{
+    background-color:#1681E5;
+    transform:scale(1.1);
     transition-duration: 1s;
-    transform: rotate(360deg);
     border: 2px solid #021425;
     scale: 1;
 
-
-}
-
-button a {
-    color: white;
+   
+ }
+ button a{
+    color:white;
     font-size: 15px;
-    text-decoration: none;
+    text-decoration: none;  
+   
+ }
+ 
 
-}
 
-.flex-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.text {
-
-    text-align: center;
+ .text{
+   text-align: center;
+   padding-top: 250px;
+   
+ }
+ .text h3{
+    font-size:45px;
     color: white;
     font-family: arial;
-
-}
-
-.text h3 {
-    font-size: 45px;
-    text-align: left;
-}
-
-.text p {
-    text-align: left;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.text button {
+  
+  
+    
+ }
+ 
+ .text p{
+    font-size: 15px;
+     padding-top: 20px;
+    color: white;
+    font-family: arial;
+ }
+ .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    margin-top: 30px;
+ }
+.text button{
     background-color: var(--button-color);
+ 
 }
 
-.text button a {
-    color: black;
+.text button a{
+    color:black;
     font-weight: bold;
 }
 
-#get {
-    position: relative;
-    right: 200px;
-}
-
-#more {
-    position: relative;
-    right: 50px;
-}
-
-.more {
+.more{
     margin-top: 50px;
 }
-
-.container {
-    height: auto;
-    padding: 0 0 10vh 0;
+.container{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-wrap:wrap;
+    justify-content:center;
+      gap:50px;
 }
-
-.child {
+.child{
     background-color: var(--secondary-color--);
-    height: 60vh;
-    width: 300px;
-    border-radius: 10px;
+    height:60vh;
+    width:22vw;
+    border-radius:10px;
     text-align: center;
-    color: white;
+    color:white;
     font-family: arial;
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:30px;
+  
+   
+    
 }
-
-.child:hover {
-    background-color: var(--another-color);
+.child:hover{
+    /* background-color:var(--another-color); */
     transform: scale(1.1);
     transition-duration: 1s;
 }
-
-.child p {
+.child p{
     padding-top: 50px;
 }
 
-.child img {
-    height: 90px;
-    padding-top: 30px;
-}
 
-.child button {
+.child button{
     background-color: var(--another-color);
-    left: 0px;
-
+    
+    
 }
-
-.child button:hover {
+.child button:hover{
     background-color: #021425;
 }
-
-.three {
+.three{
     margin-top: 100px;
 }
-
-.three h4 {
+.three h4{
     font-size: 35px;
-    text-align: center;
-    color: var(--secondary-color--);
+    text-align:center;
+    color:var(--secondary-color--);
     font-family: arial;
-    /* position: relative; */
+    position:relative;
     font-weight: bold;
-    margin-bottom: 90px;
 }
-
-.go {
-    position: relative;
-    left: 1000px;
-    bottom: 105px;
+.go{
+    position:relative;
+    left:1000px;
+    bottom:105px;
     background-color: #021425;
     font-size: 20px;
     height: 40px;
 }
-
-.members {
+.members{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 30px;
 }
-
-.ind img {
+.ind img{
     height: 35vh;
     position: relative;
-    bottom: 20px;
+    bottom:20px;
 }
-
-.ind {
+.ind{
     height: 50vh;
-    width: 280px;
+    width:20vw;
     box-shadow: 2px 2px 2px 2px var(--secondary-color--);
     border-radius: 15px;
     display: flex;
@@ -243,385 +205,156 @@ button a {
     align-items: center;
 
 }
-.btn1{
-    margin-top: 10px;
-    height: 49px;
-    width: 140px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-.ind h5 {
-    color: #021425;
+.ind h5{
+    color:#021425;
     font-size: 20px;
     font-family: arial;
     font-weight: bold;
 }
-
-.count {
+.count{
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    gap:30px;
+    justify-content: space-evenly;
     margin-top: 50px;
-    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.199)), url(/GALLERY/Best\ Software\ Development\ Company\ in\ India\ _\ Slash\ Star.jpg);
+    background: linear-gradient(to top,black,rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.199)),url(/GALLERY/Best\ Software\ Development\ Company\ in\ India\ _\ Slash\ Star.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 30vh;
+    height:30vh;
     align-items: center;
 }
-
-.num h1 {
+.num h1{
     font-size: 80px;
-    color: white;
+    color:white;
     font-family: arial;
 }
-
-.num p {
-    color: gray;
+.num p{
+    color:gray;
     font-size: 25px;
     font-family: arial;
     font-weight: bold;
     text-align: center;
 
 }
-.flex-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10vh 0 10vh 0;
-}
-.cust {
+.cust{
     box-shadow: 2px 2px 2px 2px var(--secondary-color--);
     border-radius: 15px;
     width: 85vw;
-    /* margin-left: 90px; */
+    margin-left: 90px;
     height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
 }
-
-.cust h3 {
+.cust h3{
     text-align: center;
-    /* margin-top: 90px; */
-    color: #1681E5;
+    margin-top: 90px;
+    color:#1681E5;
     font-family: arial;
     font-size: 25px;
 }
-
-.cust p {
+.cust p{
     text-align: center;
     color: #021425;
     font-family: arial;
     font-size: 30px;
     font-weight: bold;
-    /* padding-top: 50px; */
+    padding-top: 50px;
 }
-
-.img {
+.img{
     display: flex;
-    gap: 40px;
-    /* margin-left: 400px;
-    margin-top: 40px; */
+    gap:50px;
+    margin-left: 400px;
+    margin-top: 40px;
 }
-
-.stars {
+.stars{
     margin-left: 430px;
     display: flex;
-    gap: 20px;
+    gap:20px;  
     margin-top: 30px;
-
-
+    
+   
 }
-
-.stars img {
+.stars img{
     height: 40px;
-
+    
 }
-
-footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.24)), url(/GALLERY/footer.jpg);
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.918),rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.24)),url(/GALLERY/footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: auto;
-    padding: 0 0 2vh 0;
-    /* display: flex;
-    margin-top: 40px;
-    justify-content:space-around;
-    height:auto; */
-
-}
-
-.footer {
     display: flex;
     margin-top: 40px;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    /* height:auto; */
-}
+    justify-content:space-between;
+    height:60vh;
 
-.side img {
+}
+.side{
+    margin-left: 30px;
+}
+.side img{
     height: 20vh;
 }
-
-.side p {
-    color: var(--another-color);
+.side p{
+    color:var(--another-color);
     font-family: arial;
 }
-
-.side button {
+.side button{
     background-color: var(--another-color);
-    /* margin-left: 80px;
-    margin-bottom: 20px; */
+    margin-left: 80px;
+    margin-bottom: 20px;
 }
-
-.company {
+.company{
     text-align: center;
     margin-top: 40px;
 }
-
-.company h1 {
+.company h1{
     font-family: arial;
     font-size: 45px;
-    color: white;
+    color:white;
 }
-
-.company ul li a {
+.company ul li a{
     text-decoration: none;
-    color: var(--another-color);
+    color:var(--another-color);
     font-family: arial;
     font-size: 25px;
 }
-
-.to {
+.to{
     display: flex;
-    color: white;
-}
+    color:white;
+    margin-top: 150px;
+    margin-right: 90px;
 
-.to a {
-    color: white;
+}
+.to a{
+    color:white;
     text-decoration: none;
     font-family: arial;
 }
-
-.social {
+.social{
     display: flex;
-    /* position: relative;
-    bottom:55px; */
-    gap: 20px
+    position: relative;
+    bottom:55px;
+    gap:20px
+    
 }
-
-.last {
-    margin-top: 40px;
-    /* margin-bottom: 40px; */
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.social img {
+.social img{
     height: 30px;
     position: relative;
-    /* top:100px;
-    left:1000px; */
-
+    top:100px;
+    left:1000px;
+    
 }
-
-hr {
-    height: 2px;
-    background-color: white
+hr{
+    height:2px;
+    background-color:white
 }
-
-/* .last{
+.last{
     position: relative;
     bottom: 90px;
-} */
-.copy {
-    color: white;
+}
+.copy{
+    color:white;
     position: relative;
     top: 20px;
     left: 10px;
     font-family: arial;
-}
-
-
-@media screen and (max-width:1025px) {
-    .image img {
-        height: 430px;
-    }
-
-    .text h3 {
-        font-size: 2.4em;
-    }
-
-    .text p {
-        font-size: 1.3em;
-        text-align: center;
-        padding-left: 0;
-    }
-
-    #get {
-        right: 0;
-        height: 49px;
-        width: 140px;
-        border-radius: 5px;
-        font-size: 0.9em;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-
-    #more {
-        right: 0;
-        margin-left: 40px;
-        height: 49px;
-        width: 140px;
-        border-radius: 5px;
-        font-size: 0.9em;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-
-    .go {
-        left: 800px;
-        height: 49px;
-        width: 140px;
-        border-radius: 5px;
-        font-size: 0.9em;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-
-    .cust p {
-        font-size: 1.5em;
-    }
-
-    /* .img {
-        display: flex;
-        gap: 30px;
-        margin-left: 280px;
-        margin-top: 60px;
-    } */
-
-    .side p {
-        font-size: 0.9em;
-    }
-
-    .btn {
-        margin-top: 20px;
-        height: 49px;
-        width: 140px;
-        border-radius: 5px;
-        font-size: 0.9em;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-
-    .company h1 {
-        font-size: 1.6em;
-        margin-bottom: 10px;
-    }
-
-    .company ul li {
-        margin-bottom: 5px;
-    }
-
-    .company ul li a {
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width:769px) {
-    header {
-        justify-content: space-around;
-    }
-
-    .them_links {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .image img {
-        height: 300px;
-    }
-
-    .text h3 {
-        font-size: 1.3em;
-    }
-
-    .text p {
-        font-size: 1em;
-    }
-
-}
-
-@media screen and (max-width:426px) {
-    .image img{
-        height: 230px;
-    }
-    .text{
-        margin-bottom: 140px;
-    }
-    .flex-1{
-        flex-direction: column;
-        gap: 40px;
-    }
-    .num h1{
-        font-size: 2.5em;
-    }
-    .num p{
-        font-size: 0.9em;
-    }
-    .count{
-        gap: 10px;
-    }
-    .cust p{
-        font-size: 1em;
-    }
-    .img{
-        gap: 20px;
-    }
-    .footer{
-        flex-direction: column;
-        text-align: center;
-    }
-    .to{
-        margin-top: 50px;
-    }
-.flex{
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-direction: column;
-    text-align: center;
-}
-}
-@media screen and (max-width:630px) {
-    .text{
-        margin-bottom: 140px;
-    }
-    
-    .flex-1{
-        flex-direction: column;
-        gap: 50px;
-    }
-    .num h1{
-        font-size: 2.5em;
-    }
-    .num p{
-        font-size: 0.9em;
-    }
-    .count{
-        gap: 10px;
-    }
-}
+ }
