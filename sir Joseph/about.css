@@ -46,7 +46,18 @@ nav ul li a{
   
    
 }
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
 
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary-color--);
+    margin: 5px 0;
+    transition: var(--transition--);
+}
 button{
     background-color:var(--tertiary-color--); 
     color:white;
@@ -185,6 +196,7 @@ footer{
 }
 .side button{
     background-color: var(--another-color);
+    width:100px;
 
 }
 .company{
