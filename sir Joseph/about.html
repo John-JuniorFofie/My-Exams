@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/GALLERY/logo_-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="/about.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
- <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
    <section class="for">
@@ -18,12 +18,18 @@
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/services.html">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
                   
                 </ul>
             </nav>
-             <button><a href="">Contact Us</a></button>
-        </header>
+             <button><a href="/contact.html">Contact Us</a></button>
+              <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>  
+    </header>
+            </header>
         <div class="intro">
         <h1>About Us</h1>
     </div> 
@@ -95,4 +101,41 @@
   
   </footer>
 </body>
+<script>
+  
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a nav link
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    </script>
 </html>
