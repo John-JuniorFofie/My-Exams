@@ -8,7 +8,9 @@
     <link rel="shortcut icon" href="/GALLERY/logo_-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+  <link rel="stylesheet" href="media.css"> 
+  <!-- <link rel="stylesheet" href="style.css">  -->
+  </head>
 <body>
     <header>
         <div class="logo"><a href=""><img src="/GALLERY/logo_-removebg-preview.png" alt=""></a></div>
@@ -18,10 +20,16 @@
                 <li><a href="/about.html">About us</a></li>
                 <li><a href="">Portfolio</a></li>
                 <button><a href="/contact.html">Contact Us</a></button>
-                <img src="" alt="">
+               
             </ul>
         </nav>
+          <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>  
     </header>
+      </header>
     <section class="greet">
      <div class="flexee">
     <div class="con"><h3>CONTACT US </h3></div>
@@ -35,39 +43,73 @@
       </div>
      </div>
     </section>
-    <footer>
-        <div class="side">
-          <img src="/GALLERY/logo_-removebg-preview.png" alt="">
-          <p>Your best website that <br>specializes in building
-            <br>web and mobile apps for <br>small giv.</p>
-            <button><a href="about.html">Learn More</a></button>
-        </div>
-            <div class="company">
-              <h1>Company</h1>
-              <ul>
-                <li><a href="/about.html">About Us</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/portfolio.html">Portfolio</a></li>
-                <li><a href="/index.html">Home</a></li>
-              </ul>
-            </div>
-            <div class="to">
-              
-              <p>Write to Us:<a href="">johnnylexingtech@gmail.com</a></p>
-           
-      </footer>
+    
     
     </div>
-      <div class="last">
-        <hr>
-      <div class="copy"> &copy;2025 Johnny Lexing Tech Studios.</div>
-      <div class="social">
-        <div class="social"><img src="/GALLERY/twitter.png" alt=""></div>
-        <div class="social"><img src="/GALLERY/facebook.png" alt=""></div>
-        <div class="social"><img src="/GALLERY/instagram.png" alt=""></div>
-        <div class="social"><img src="/GALLERY/linkedIn.png" alt=""></div>
-      </div>  
+ 
+<footer>
+   <div class="bigger">
+     <div class="side">
+      <img src="/GALLERY/logo_-removebg-preview.png" alt="">
+      <p>Your best website that <br>specializes in building
+        <br>web and mobile apps for <br>small businesses.</p>
+        <button><a href="about.html">Learn More</a></button>
     </div>
-    </body>
-    </html>
+        <div class="company">
+          <h1>Company</h1>
+          <ul>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="to">
+        <a href="">johnnylexingtech@gmail.com</a></p>
+    </div>
+   </div>
+  <div class="last">
+    <hr>
+  <div class="copy"> &copy;2025 Johnny Lexing Tech Studios.</div>
+  
+  </footer>
+    <script>
+  
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a nav link
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
 </body
