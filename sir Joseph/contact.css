@@ -12,14 +12,7 @@
     list-style-type: none;
     box-sizing: border-box;
 }
-.intro{
-    background: linear-gradient(rgba(0, 0, 29, 0.781),rgba(0, 0, 29, 0.397),rgba(0, 0, 29, 0.048)),url(/GALLERY/Best\ Software\ Development\ Company\ in\ India\ _\ Slash\ Star.jpg);
-    /* background-attachment: fixed; */
-    background-position: center;
-   background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -61,8 +54,7 @@ button{
     height:5vh;
     width:10vw;
     color:white;
-    /* position: relative; */
-    /* right: 80px; */
+ 
 
  }
  button:hover{
@@ -76,15 +68,33 @@ button{
     font-size: 15px;
     text-decoration: none;
  }
+ .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary-color--);
+    margin: 5px 0;
+    transition: var(--transition--);
+}
  .greet{
     background:linear-gradient( #02386bd0,#02386b73,#02386b59),url(/GALLERY/Screenshot\ 2025-03-25\ 095131.png);
-    height:50vh;
+    height:70vh;
+    justify-content: center;
+    width:100% ;
 
  }
  .flexee{
    display:flex;
-   justify-content:space-between;
-   padding:50px;
+   flex-wrap: wrap;
+   justify-content:center;
+   gap:100px;
+   align-items: center;
+   height: 50vh;
+   
 
  }
  .con{
@@ -95,18 +105,32 @@ button{
    font-size: 30px;
  }
  .form{
-   width: 40%;
+   width:40%;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   /* align-items: center; */
+   height:400px;
+   font-family: sans-serif;
+   color:white;
+   font-size: 15px; 
+ }
+ .form h3{
+   font-family: sans-serif;
+   color:white;
+   font-size: 25px;
  }
  input{
-   width:20vw;   
+   width:400px;
+   height:30px;
+   text-align: center;
+   border-radius: 10px;
+   border:none;   
 }
 textarea{
-   width:20vw; 
-   margin-top: 20px;
+ height: 100px;
+ width:400px;
+ margin-top: 10px;
+ border:none;
 }
  
  footer{
@@ -114,80 +138,113 @@ textarea{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    /* margin-top: 40px; */
-    justify-content:space-between;
-    height:60vh;
  
- }
- .side{
-    /* margin-left: 30px; */
- }
- .side img{
+
+}
+.bigger{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content:space-around;
+    height: auto;
+    width: 100%;
+    
+}
+.side{
+    display: flex;
+    flex-direction: column;
+}
+.side img{
     height: 20vh;
- }
- .side p{
+}
+.side p{
     color:var(--another-color);
     font-family: arial;
- }
- .side button{
+}
+.side button{
     background-color: var(--another-color);
-    margin-left: 80px;
-    margin-bottom: 20px;
- }
- .company{
+    width:100px;
+
+}
+.company{
     text-align: center;
     margin-top: 40px;
- }
- .company h1{
+}
+.company h1{
     font-family: arial;
     font-size: 45px;
     color:white;
- }
- .company ul li a{
+}
+.company ul li a{
     text-decoration: none;
     color:var(--another-color);
     font-family: arial;
     font-size: 25px;
- }
- .to{
+}
+.to{
     display: flex;
     color:white;
     margin-top: 150px;
     margin-right: 90px;
- 
- }
- .to a{
+
+}
+.to a{
     color:white;
     text-decoration: none;
     font-family: arial;
- }
- .social{
-    display: flex;
-    position: relative;
-    bottom:55px;
-    gap:20px
-    
- }
- .social img{
-    height: 30px;
-    position: relative;
-    top:100px;
-   right:1000px;
-    
- }
- hr{
+}
+
+
+hr{
     height:2px;
     background-color:white
- }
- .last{
+}
+.last{
     position: relative;
-    bottom: 90px;
- }
- .copy{
+    /* bottom: 90px; */
+}
+.copy{
     color:white;
-    position: relative;
-    top: 20px;
-    /* left: 10px; */
+   text-align: center;
     font-family: arial;
  }
+ @media screen and (max-width:768px) {
+   .form{
+      input{
+   width:300px;
+   height:30px;
+   text-align: center;
+   border-radius: 10px;
+   border:none;   
+}
+textarea{
+ height: 100px;
+ width:300px;
+ margin-top: 10px;
+ border:none;
+}
+   }
+
+ }
+ @media screen and (max-width:425px) {
+   .greet{
+      height: 120vh;
+   }  
+   .form{
+      input{
+   width:200px;
+   height:30px;
+   text-align: center;
+   border-radius: 10px;
+   border:none;   
+}
+textarea{
+ height: 100px;
+ width:200px;
+ margin-top: 10px;
+ border:none;
+}
+   }
+ 
+ }
+ 
