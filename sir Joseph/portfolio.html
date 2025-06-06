@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnny Lexing Tech-Portfolio </title>
     <link rel="shortcut icon" href="/GALLERY/logo_-removebg-preview.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="portfolio.css">   
+    <link rel="stylesheet" href="portfolio.css">  
+    <link rel="stylesheet" href="media.css"> 
 </head>
 <body>
+     <header>
+        <div class="logo"><a href=""><img src="/GALLERY/logo_-removebg-preview.png" alt=""></a></div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+        <button><a href="/contact.html">Contact Us</a></button>
+     <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    </header>
     <h1>OUR WORKS</h1>
     <h3>Web Development</h3>
     <div class="web">
@@ -33,19 +50,46 @@
         <div class="pics"><img src="/GALLERY/portfolio/app/UI_UX sign-up flow for a fake social media mobile….jpg" alt=""></div>
         <div class="pics"><img src="/GALLERY/portfolio/app/Connect - mobile app design, Figma, Start-up project, UX_UI.jpg" alt=""></div>
     </div>
-    <footer>
-        <div class="logo"><a href=""><img src="/GALLERY/logo_-removebg-preview.png" alt=""></a></div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About us</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <button><a href="/contact.html">Contact Us</a></button>
-                <img src="" alt="">
-            </ul>
-        </nav>
-    </footer>
-        <hr>
+
       
 </body>
+<script>
+  
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a nav link
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
 </html>
