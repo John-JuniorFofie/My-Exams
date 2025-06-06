@@ -4,6 +4,8 @@
     --tertiary-color--:#02386B;
     --button-color:#D9D9D9;
     --another-color:#1681E5;
+     --transition--: all 0.3s ease;
+     --nav-bg:white;
 
 }
 *{
@@ -22,6 +24,7 @@
 }
 header{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
     background-color: white;
     align-items:center;
@@ -84,7 +87,18 @@ button{
  }
  
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
 
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary-color--);
+    margin: 5px 0;
+    transition: var(--transition--);
+}
  .text{
    text-align: center;
    padding-top: 250px;
@@ -143,14 +157,11 @@ button{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    gap:60px;
-  
-   
-    
+    gap:60px;   
 }
 
 .child p{
-/*     padding-top: 50px; */
+    /* padding-top: 50px; */
 }
 
 
@@ -315,6 +326,7 @@ footer{
 }
 .side button{
     background-color: var(--another-color);
+      width:100px;
 
 }
 .company{
