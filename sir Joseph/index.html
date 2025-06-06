@@ -22,7 +22,11 @@
             </ul>
         </nav>
             <button><a href="/contact.html">Contact Us</a></button>
-            
+       <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>  
     </header>
   <section class="intro">
     <div class="text">
@@ -47,10 +51,7 @@
      <button><a href="">Learn more</a></button>
     </div>
     <div class="child">
-      <i class="fa-solid fa-mobile-screen fa-2xl" style="color: #1681E5;"></i> 
-      <p>
-        Building seamless and engaging mobile apps that connect people, simplify processes, and drive <br>business growth
-   
+      <i class="fa-solid fa-mobile-screen fa-2xl" style="color: #1681E5;"></i> <p> Building seamless and engaging mobile apps that connect people, simplify processes, and drive business growth.
       </p>
     <button><a href="">Learn more</a></button>
   </div>
@@ -143,6 +144,43 @@
   <div class="copy"> &copy;2025 Johnny Lexing Tech Studios.</div>
   
   </footer>
+<script>
+  
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
 
+    // Close mobile menu when clicking a nav link
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
 
 </body>
