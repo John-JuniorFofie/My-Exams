@@ -6,6 +6,7 @@
     <title>Johnny Lexing Tech/ Services</title>
     <link rel="shortcut icon" href="/GALLERY/logo_-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
    <section class="start">
@@ -20,7 +21,13 @@
             </ul>
         </nav>
         <button><a href="/contact.html">Contact Us</a></button>
+     <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
     </header>
+    
     <div class="text">
        <H3> OUR SERVICES</H3>
     </div>
@@ -78,10 +85,10 @@
 
         </p>
     </div>
-    <div class="gal">
+
         <div class="ono">
             <img src="/GALLERY/mobile app.jpg" alt="">
-        </div>
+    
     </div>
    </div>
    <h3>UI/UX Design</h3>
@@ -140,4 +147,43 @@
   
   </footer>
 </body>
+<script>
+  
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a nav link
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
 </html>
